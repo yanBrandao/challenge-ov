@@ -1,0 +1,30 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres
+    container_name: ovinto_postgres
+    volumes:
+      - ./startup.sql:/docker-entrypoint-initdb.d/startup.sql
+      - ./standstills.csv:/home/standstills.csv
+    environment:
+      POSTGRES_USENAME: yan
+      POSTGRES_PASSWORD: yan123
+    ports:
+      - "5433:5432"
+    networks:
+      - local_network
+  
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: yan@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: "yan123"
+    ports:
+      - "16543:80"
+    networks:
+      - local_network
+
+networks: 
+  local_network:
+    driver: bridge
