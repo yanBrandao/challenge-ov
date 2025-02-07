@@ -1,4 +1,4 @@
-# 1. Problem Solving Skills
+# one
 
 This is a very interesting problem—a type of task unlike anything else I’ve done today—because it requires interpreting what the client wants to achieve and translating that into a chart.
 
