@@ -91,7 +91,7 @@ GROUP BY present_when, assets_stood_longer_than_5_days
 ORDER BY present_when;
 ```
 
-Part C.
+## Part C
 
 We can create composite indexes.
 

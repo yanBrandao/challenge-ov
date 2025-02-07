@@ -14,7 +14,7 @@ All code execution is based on the following steps:
 5. Identify which member is the furthest away.
 6. Calculate that distance to display the result.
 
-Below is the main method:
+Below is the main method: [EmployeeService](https://github.com/yanBrandao/challenge-ov/blob/main/questions/3_three/member_calculator/src/main/java/com/ovinto/member_calculator/application/service/EmployeeService.java)
 
 ```java
 public void execute(List<Employee> members) {
